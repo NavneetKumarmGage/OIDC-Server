@@ -8,7 +8,7 @@ mvn clean compile and install
 
 Go to the target folder and get the war artifact and deploy it to any servlet container running in your env. 
 
-a) Tested the below API
+A) Tested the below API
 URI : localhost:8080/greeting
 
 Response
@@ -18,7 +18,8 @@ Response
 }
 The above server response says you are not authorized to access the resource:
 
-b. For accessing the protected resource, we need to first request an access token via the OAuth handshake. Request OAuth authorization:
+
+B). For accessing the protected resource, we need to first request an access token via the OAuth handshake. Request OAuth authorization:
 
 Method: POST
 Request URL: http://localhost:8080/oauth/token?username=roy&password=spring&grant_type=password&scope=read write&client_id=clientapp&client_secret=123456
@@ -39,7 +40,7 @@ Response Payload:
 }
 
 
-c. Use the access_token returned in the previous request to make the authorized request to the protected endpoint:
+C). Use the access_token returned in the previous request to make the authorized request to the protected endpoint:
 
 Method: GET
 Request URL: http://localhost:8080/greeting
