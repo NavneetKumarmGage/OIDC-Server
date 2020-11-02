@@ -1,9 +1,13 @@
-Usecase: OIDC Server project is a REST service that provides a single RESTful endpoint protected by OAuth 2
+Operating Instructions:
 
+1. Open the Git Bash terminal and run the below command
+git clone https://github.com/NavneetKumarmGage/OIDC-Server.git
 
-The following validation done on OIDC Server : 
+2. Once th project OIDC-Server downloaded completely. Locate the build file location where .pom file is present. you can execute mvn clean compile and install
+command.
+3. Go to the target folder and get the war artifact and deploy it to any servlet container running in your env. 
 
-1) Tested the below API
+a) Tested the below API
 URI : localhost:8080/greeting
 
 Response
@@ -16,7 +20,7 @@ The above server response says you are not authorized to access the resource:
 
 
 
-2. For accessing the protected resource, we need to first request an access token via the OAuth handshake. Request OAuth authorization:
+b. For accessing the protected resource, we need to first request an access token via the OAuth handshake. Request OAuth authorization:
 
 Method: POST
 Request URL: http://localhost:8080/oauth/token?username=roy&password=spring&grant_type=password&scope=read write&client_id=clientapp&client_secret=123456
@@ -37,7 +41,7 @@ Response Payload:
 }
 
 
-3. Use the access_token returned in the previous request to make the authorized request to the protected endpoint:
+c. Use the access_token returned in the previous request to make the authorized request to the protected endpoint:
 
 Method: GET
 Request URL: http://localhost:8080/greeting
@@ -52,5 +56,5 @@ Response Payload:
 "content": "Hello, Roy!"
 }
 
-Snapshot for reference:
+
 
