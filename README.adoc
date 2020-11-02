@@ -1,14 +1,17 @@
 Operating Instructions:
 
-Open the Git Bash terminal and run the below command
+Open the Git Bash terminal and run the below command or you can download it directly in to your machine drive..
 git clone https://github.com/NavneetKumarmGage/OIDC-Server.git
 
-Once th project OIDC-Server downloaded completely. Locate the project folder where .pom file is present. you can execute the below command there
+Once the project OIDC-Server downloaded completely. Locate the project folder where .pom file is present. you can execute the below command there
 mvn clean compile and install
 
-Go to the target folder and get the war artifact and deploy it to any servlet container running in your env. 
+Run the below command now.
+mvn spring-boot:run
 
-A) Tested the below API
+Make sure that Tomcat started on port(s): 8080 (http) 
+
+A) Test the below API
 URI : localhost:8080/greeting
 
 Response
