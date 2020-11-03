@@ -1,5 +1,6 @@
 1) Refer the documenent for overall understanding of product architecure bases on my perceived idea. Proposed Product Architecture and Services Integration Options.pdf
-2) OIDC Server is in-house designed and developed for token based authentication and authorisation for all external client apps.
+
+2) OIDC Server is in-house designed and developed for token based authentication and authorisation for all external client apps. Refer the doc OIDC Server API Verification.pdf for more info..
 
 Operating Instructions:
 
