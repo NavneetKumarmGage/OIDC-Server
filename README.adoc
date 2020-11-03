@@ -1,3 +1,6 @@
+1) Refer the documenent for overall understanding of product architecure bases on my perceived idea. Proposed Product Architecture and Services Integration Options.pdf
+2) OIDC Server is in-house designed and developed for token based authentication and authorisation for all external client apps.
+
 Operating Instructions:
 
 Open the Git Bash terminal and run the below command or you can download it directly in to your machine drive..
